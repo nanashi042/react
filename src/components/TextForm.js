@@ -43,7 +43,7 @@ export default function TextForm(props) {
     <div className="container my-5">
         <h1>Your Text Summary</h1>
         <p>{text.trim().length } characters</p>
-        <p>{text.replace(/\n/g, " ").split(' ').filter(value => value != "").length} words</p>
+        <p>{text.replace(/\n/g, " ").split(' ').filter(value => value !== "").length} words</p>
     </div>
 
     <div className="container">
